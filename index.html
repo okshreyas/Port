@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>portfolio</title>
+     <style>
+        
+          header {
+               position: fixed; /* Stick the header to the top */
+               top: 0;
+               left: 0;
+               width: 25%; /* Set a fixed width for the header */
+               height: 100vh; /* Set height to viewport height */
+               display: flex;
+               flex-direction: column; /* Align items vertically */
+               justify-content: space-between; /* Push items to top and bottom */
+               /* padding: 20px; */
+               background-color: rgba(207, 207, 207, 0); /* Transparent red background */
+               color: #ffffff;
+               z-index: 1000; /* Ensure the header appears above other content */
+          }
+          nav {
+               position: absolute; /* Position the nav absolutely within the header */
+               top: 45%; /* Align nav to the middle */
+               left: 50%;
+               transform: translate(-50%, -50%); /* Center the nav */
+               color: #ffffff;
+               border: 2px solid #ffffff;
+               border-radius: 20px;
+               padding: 0;
+
+          }
+          nav ul {
+               display: flex;
+               flex-direction: column; /* Align items vertically */
+               padding: 0; /* Remove default padding */
+          }
+          nav ul li {
+               margin-bottom: 20px; /* Adjust bottom margin */
+          }
+          nav ul li a {
+               text-decoration: none;
+               color: #ffffff;
+          }
+         
+          .hero {
+               text-align: center;
+               padding: 50px;
+               margin-top: 50px;
+               /* background-color: #f4f4f4; */
+               /* height: 100vh;  */
+               /* Set height to viewport height */
+              /* Adjust margin to account for fixed header */
+          }
+          .portfolio {
+               display: flex;
+               justify-content: space-between;
+               margin-top: 20px;
+               min-height: 200vh;
+                /* Set height to viewport height */
+
+               /* margin-left: 200px;  */
+               /* Adjust margin to account for fixed header */
+               flex-direction: column;
+          }
+
+          .portfolio .project {
+               flex: 1;
+               margin: 10px;
+               padding: 50px;
+               background-color: #f4f4f400;
+               max-height: 80%;
+               overflow-y: auto;
+               color: #000000;
+               border-radius: 20px;
+               flex-direction: column;
+               scrollbar-width: thin;
+               scroll-behavior: smooth;
+               scrollbar-color: #ffffff00 #f4f4f400;
+               border: 2px solid #f7ffc7; /* Define a solid border first */
+               color: #ffffff;
+               font-size: 20px;
+               text-align: justify; /* Set text alignment to justify */
+               margin-bottom: 60px;
+
+               }   
+
+               .project img {
+                   height: 100px; /* Set height for the image */
+                   width: auto; /* Let the width adjust automatically */
+                   margin-right: 10px; /* Adjust as needed */
+                   border-radius: 20px;
+                   margin-right: 50px;
+               }
+
+               .project p {
+                   flex: 1; /* Allow the paragraph to take up remaining space */
+               }
+
+
+               .project-info {
+                   flex: 1; 
+                   overflow: hidden; 
+               }
+
+
+          section {
+               padding: 50px;
+               height: 100vh;          }
+          
+  
+
+
+
+
+          body {
+               margin: 0;
+               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+               display: flex;
+               flex-direction: column;
+               min-height: 100vh; /* Ensure the body takes up at least the viewport height */
+               background-color: #171717;
+               color: #ffffff;
+               font-size: 25px;
+               padding: 0px;
+               scrollbar-color: #ffffff00 #171717; /* Set scrollbar color */
+               scrollbar-width: thin; /* Set scrollbar width */
+               font-weight: 400;
+
+          }
+
+          main {
+               flex: 1; /* Allow main content to grow */
+               margin-left: 20%;
+               
+          }
+
+          footer {
+               text-align: center;
+               padding: 10px;
+               background-color: #000000;
+               color: #ffffff;
+               width: 100-2%;
+               /* position: absolute; */
+          }
+
+          footer ul {
+               display: flex;
+               justify-content: center;
+               list-style: none;
+          }
+          footer ul li {
+               margin-right: 30px;
+          }
+          footer ul li a {
+               text-decoration: none;
+               color: #ffffff;
+          }
+
+          @media (max-width: 768px) {
+               header {
+                    width: 100%; /* Set header width to full width */
+                    height: auto; /* Allow header to adjust its height */
+                    flex-direction: row; /* Align items horizontally */
+                    padding: 20px;
+               }
+               nav {
+                    position: static; /* Reset position to normal flow */
+                    transform: none; /* Remove transformation */
+                    margin-top: 20px; /* Adjust top margin */
+               }
+               nav ul {
+                    flex-direction: row; /* Align items horizontally */
+               }
+               nav ul li {
+                    margin-bottom: 0;
+                    margin-right: 20px; /* Adjust right margin */
+               }
+               .hero, .portfolio {
+                    margin-left: 0; /* Remove left margin */
+               }
+          }
+
+          @media (max-width: 576px) {
+               .hero {
+                    padding: 20px;
+               }
+               .portfolio {
+                    flex-direction: column;
+               }
+               .project {
+                    margin: 10px 0;
+               }
+          }
+          
+          .spcl{
+               /* border: 3px solid rgb(255, 255, 255); */
+               border-radius: 30px;
+               padding: 0px;
+               margin: 10px;
+          }
+
+.flex-container {
+    display: flex;
+    /* align-items: center;  */
+    /* text justify */
+     /* justify-content: space-between; */
+}
+
+
+.button-48 {
+  appearance: none;
+  background-color: #ffffff00;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: capitalize;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  /* border-radius: 10px; */
+     margin-top: 5px;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #d9ff00a8;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+  /* border-radius: 10px; */
+
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  animation-name: opacityFallbackIn, clipPathIn;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  /* border-radius: 10px; */
+
+}
+
+.button-48:after {
+  background-color: #ffffff;
+  /* border-radius: 10px; */
+
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
+}
+
+hr {
+     border: 0;
+     height: 1px;
+     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+     margin: 20px 0;
+}
+
+/* Set scrollbar width */
+.portfolio .project {
+    scrollbar-width: thin; /* Set scrollbar width */
+}
+
+/* Set scrollbar track color */
+.portfolio .project::-webkit-scrollbar-track {
+    background: #171717; /* Adjust the color as needed */
+}
+
+/* Set scrollbar thumb color */
+.portfolio .project::-webkit-scrollbar-thumb {
+    background: #ffffff; /* Adjust the color as needed */
+    border-radius: 5px; /* Optional: Add rounded corners to the scrollbar thumb */
+}
+
+/* Set scrollbar width */
+body::-webkit-scrollbar {
+    width: 10px; /* Adjust the width as needed */
+}
+
+/* Set scrollbar track color */
+body::-webkit-scrollbar-track {
+    background: #171717; /* Adjust the color as needed */
+}
+
+/* Set scrollbar thumb color */
+body::-webkit-scrollbar-thumb {
+    background: #ffffff; /* Adjust the color as needed */
+    border-radius: 5px; /* Optional: Add rounded corners to the scrollbar thumb */
+}
+
+h1{
+     color: #ffffff;
+     font-weight: 300;
+     font-size: 50px;
+     font-family: cascadia code, sans-serif;
+
+}
+
+
+/* CSS */
+.button-57 {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #18181a;
+  color: #18181a;
+  display: inline-block;
+  font-size: 35px;
+  line-height: 15px;
+  padding: 22px 200px 27px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight: 400;
+     margin-right: 20px;
+
+}
+
+.button-57 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.button-57 span:last-child {
+  color: rgb(0, 0, 0);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.button-57:after {
+  content: "";
+  position: absolute;
+  bottom: -170%;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background-color: rgb(159, 221, 60);
+  transform-origin: bottom center;
+  transition: transform 300ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+  color: #18181a;
+}
+
+.button-57:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+  
+}
+
+.button-57:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 600ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+h12{
+     color: #e5ff00;
+     font-weight: 200;
+     font-size: 60px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+
+     </style>
+</head>
+<body><div class="spcl">
+     <header>
+          <!-- <div class="logo">
+               <img src="logo.png" alt="logo">
+          </div> -->
+          <nav>
+               <ul>
+                 
+                    <!-- button for the header -->
+                    <button class="button-48" onclick="scrollToSection('#home')"><span class="text">Home</span></button>
+                    <button class="button-48" onclick="scrollToSection('#about')"><span class="text">About</span></button>
+                    <button class="button-48" onclick="scrollToSection('#Skills')"><span class="text">Skills</span></button>
+                    <button class="button-48" onclick="scrollToSection('#portfolio')"><span class="text">Projects</span></button>
+                    <button class="button-48" onclick="scrollToSection('#services')"><span class="text">Services</span></button>
+                    <button class="button-48" onclick="scrollToSection('#contact')"><span class="text">Contact</span></button>
+
+                    
+               </ul>
+          </nav>
+     </header>
+     <main>
+          <section id="home" class="hero" style="line-height: 2;">
+               <!-- <h1>Welcome to my Portfolio!</h1> -->
+               <p style="font-size: 30px;">Hey there! My name is <br> <h12>Shreyas Joshi</h12><br>and I'm a Software developer with a passion for crafting awesome projects.</p>
+               <p style="font-size: 30px;">Take a sneak peek at some of the cool stuff I've built using Java – from sleek web apps to powerful desktop tools. Let's dive in together and explore the exciting world of coding!</p>
+               
+               <button class="button-48" onclick="scrollToSection('#about')" style="color: #ffffff; border: 2px solid white; border-radius: 10px;"><span class="text">About Me</span></button>
+
+          </section>
+          <section id="about" class="about" style="padding:100px; text-align: center; ">
+               <hr>
+               <h2>About Me</h2>
+               <p>As a software developer, my role revolves around designing and building digital solutions. I specialize in writing code to create software applications that serve various purposes, from managing data to enhancing user experiences. My goal is to develop robust and user-friendly software that meets the needs of clients and end-users effectively.</p>
+          </section><hr>
+          <section id="Skills" class="Skills"  style="line-height: 2.5;">
+               <h1>Skills</h1>
+               <ul>
+                    
+                    
+                    <button class="button-57" role="button"><span class="text" style="cursor:default;">  Core Java</span><span>Core Java</span></button>
+                    <button class="button-57" role="button"><span class="text" style="cursor:default;">Spring Boot</span><span>Spring Boot</span></button>
+                    <button class="button-57" role="button"><span class="text" style="cursor:default;">Rest API</span><span>Rest API</span></button>
+                    <button class="button-57" role="button"><span class="text" style="cursor:default;">HTML CSS</span><span>HTML CSS</span></button>
+                    <button class="button-57" role="button"><span class="text" style="cursor:default;">JavaScript</span><span>JavaScript</span></button>
+                    <button class="button-57" role="button"><span class="text" style="cursor:default;">Git / GitHub</span><span>Git / GitHub</span></button>
+                    <button class="button-57" role="button"><span class="text" style="cursor:default;">MySQL</span><span>MySQL</span></button>
+                    
+     
+               </ul>
+          </section>
+          <section id="portfolio" class="portfolio"> 
+               <h1>Projects</h1><br>
+               <div class="project">
+                   
+                    <div class="flex-container">
+                        <img src="a.png" alt="project1"> 
+                        <p><h1>Project 1</h1>  </div><br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                         Accusantium quos libero porro soluta, non beatae aperiam vel eaque dicta nesciunt eveniet molestias 
+                         provident sint voluptas qui voluptate reprehenderit. Placeat nihil voluptatum fugit earum sequi doloremque,
+                          sapiente velit cupiditate. Assumenda doloremque delectus quibusdam, exercitationem provident unde consequuntur 
+                          architecto sapiente, corporis neque, numquam reiciendis expedita quo? Accusamus mollitia impedit aliquid adipisci
+                           explicabo iure, vel ipsam veniam magnam cumque quia odio quos quaerat repellat eos, veritatis amet delectus sapiente.
+                            Amet aliquam perspiciatis est culpa a distinctio beatae voluptatum officiis qui nemo nesciunt laboriosam, omnis asperiores 
+                            aspernatur voluptates consectetur veniam quas illum! Totam eligendi consequatur exercitationem amet quo modi, corrupti perferendis? 
+                              ullam temporibus! Qui autem, rem culpa commodi facere, laudantium inventore suscipit atque impedit ab eveniet odit nulla! Iste</p>     
+                </div>
+                
+               <div class="project">
+                    <div class="flex-container">
+                         <img src="a.png" alt="project1"> 
+                         <p><h1>Project 1</h1>  </div><br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                          Accusantium quos libero porro soluta, non beatae aperiam vel eaque dicta nesciunt eveniet molestias 
+                          provident sint voluptas qui voluptate reprehenderit. Placeat nihil voluptatum fugit earum sequi doloremque,
+                           sapiente velit cupiditate. Assumenda doloremque delectus quibusdam, exercitationem provident unde consequuntur 
+                           architecto sapiente, corporis neque, numquam reiciendis expedita quo? Accusamus mollitia impedit aliquid adipisci
+                            explicabo iure, vel ipsam veniam magnam cumque quia odio quos quaerat repellat eos, veritatis amet delectus sapiente.
+                             Amet aliquam perspiciatis est culpa a distinctio beatae voluptatum officiis qui nemo nesciunt laboriosam, omnis asperiores 
+                             aspernatur voluptates consectetur veniam quas illum! Totam eligendi consequatur exercitationem amet quo modi, corrupti perferendis? 
+                               ullam temporibus! Qui autem, rem culpa commodi facere, laudantium inventore suscipit atque impedit ab eveniet odit nulla! Iste</p> 
+                               </div>
+                               <div class="project">
+                                   <div class="flex-container">
+                                        <img src="a.png" alt="project1"> 
+                                        <p><h1>Project 1</h1>  </div><br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                         Accusantium quos libero porro soluta, non beatae aperiam vel eaque dicta nesciunt eveniet molestias 
+                                         provident sint voluptas qui voluptate reprehenderit. Placeat nihil voluptatum fugit earum sequi doloremque,
+                                          sapiente velit cupiditate. Assumenda doloremque delectus quibusdam, exercitationem provident unde consequuntur 
+                                          architecto sapiente, corporis neque, numquam reiciendis expedita quo? Accusamus mollitia impedit aliquid adipisci
+                                           explicabo iure, vel ipsam veniam magnam cumque quia odio quos quaerat repellat eos, veritatis amet delectus sapiente.
+                                            Amet aliquam perspiciatis est culpa a distinctio beatae voluptatum officiis qui nemo nesciunt laboriosam, omnis asperiores 
+                                            aspernatur voluptates consectetur veniam quas illum! Totam eligendi consequatur exercitationem amet quo modi, corrupti perferendis? 
+                                              ullam temporibus! Qui autem, rem culpa commodi facere, laudantium inventore suscipit atque impedit ab eveniet odit nulla! Iste</p> 
+                                              </div>
+          </section>
+          <section id="services" class="services"> <hr><hr>
+               <h1>Services</h1>
+               <ul>
+                    <!-- skills of java spring fullstack developer -->
+                    <li>Core Java</li>
+                    <li>Spring Boot</li>
+                    <li>Rest API</li>
+                    <li>HTML CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git / GitHub</li>
+                    <li>MySQL</li>
+                    <li>React JS</li>
+                    <li>Node JS</li>
+
+               </ul>
+          </section>
+          <section id="contact" class="contact">
+               <h1>Contact Me</h1>
+               <p>Email: john.doe@example.com</p>
+               <p>Phone: +1234567890</p>
+          </section>
+     </main></div>
+     <footer>
+          <ul>
+               <li><a href="#">Facebook</a></li>
+               <li><a href="#">Twitter</a></li>
+               <li><a href="#">Instagram</a></li>
+          </ul>
+     </footer>
+
+
+
+     
+     <script>
+          // Smooth scrolling script
+          document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+               anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                         behavior: 'smooth'
+                    });
+               });
+          });
+
+          function scrollToSection(sectionId) {
+    const section = document.querySelector(sectionId);
+    if (section) {
+        section.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+}
+
+
+
+     </script>
+     
+</body>
+</html>
+
+
+<!-- HTML !-->
+

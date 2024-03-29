@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>portfolio</title>
+     <style>
+        
+          header {
+               position: fixed; /* Stick the header to the top */
+               top: 0;
+               left: 0;
+               width: 25%; /* Set a fixed width for the header */
+               height: 100vh; /* Set height to viewport height */
+               display: flex;
+               flex-direction: column; /* Align items vertically */
+               justify-content: space-between; /* Push items to top and bottom */
+               /* padding: 20px; */
+               background-color: rgba(207, 207, 207, 0.5); /* Transparent red background */
+               color: #ffffff;
+               z-index: 1000; /* Ensure the header appears above other content */
+          }
+          nav {
+               position: absolute; /* Position the nav absolutely within the header */
+               top: 50%; /* Align nav to the middle */
+               left: 50%;
+               transform: translate(-50%, -50%); /* Center the nav */
+          }
+          nav ul {
+               display: flex;
+               flex-direction: column; /* Align items vertically */
+               padding: 0; /* Remove default padding */
+          }
+          nav ul li {
+               margin-bottom: 20px; /* Adjust bottom margin */
+          }
+          nav ul li a {
+               text-decoration: none;
+               color: #ffffff;
+          }
+         
+          .hero {
+               text-align: center;
+               padding: 50px;
+               margin-top: 50px;
+               /* background-color: #f4f4f4; */
+               /* height: 100vh;  */
+               /* Set height to viewport height */
+              /* Adjust margin to account for fixed header */
+          }
+          .portfolio {
+               display: flex;
+               justify-content: space-between;
+               margin-top: 20px;
+                /* Set height to viewport height */
+               /* margin-left: 200px;  */
+               /* Adjust margin to account for fixed header */
+               flex-direction: column;
+          }
+
+          .portfolio .project {
+               flex: 1;
+               margin: 10px;
+               padding: 20px;
+               background-color: #f4f4f4;
+               max-height: 80%;
+               overflow-y: auto;
+               color: #000000;
+               border-radius: 20px;
+          }
+          section {
+               padding: 50px;
+               height: 100vh;          }
+          .project {
+               flex: 1;
+               margin: 10px;
+               padding: 20px;
+               background-color: #f4f4f4;
+               max-height: 80%;
+               overflow-y: auto;
+               color: #000000;
+               border-radius: 20px;
+          }
+          body {
+               margin: 0;
+               font-family: Arial, sans-serif;
+               display: flex;
+               flex-direction: column;
+               min-height: 100vh; /* Ensure the body takes up at least the viewport height */
+               background-color: #1a1a1a;
+               color: #ffffff;
+               font-size: 25px;
+
+          }
+
+          main {
+               flex: 1; /* Allow main content to grow */
+               overflow-y: auto; /* Add vertical scrollbar if content overflows */
+               margin-left: 27%;
+          }
+
+          footer {
+               text-align: center;
+               padding: 20px;
+               background-color: #000000;
+               color: #ffffff;
+          }
+
+          footer ul {
+               display: flex;
+               justify-content: center;
+               list-style: none;
+          }
+          footer ul li {
+               margin-right: 20px;
+          }
+          footer ul li a {
+               text-decoration: none;
+               color: #ffffff;
+          }
+
+          @media (max-width: 768px) {
+               header {
+                    width: 100%; /* Set header width to full width */
+                    height: auto; /* Allow header to adjust its height */
+                    flex-direction: row; /* Align items horizontally */
+                    padding: 20px;
+               }
+               nav {
+                    position: static; /* Reset position to normal flow */
+                    transform: none; /* Remove transformation */
+                    margin-top: 20px; /* Adjust top margin */
+               }
+               nav ul {
+                    flex-direction: row; /* Align items horizontally */
+               }
+               nav ul li {
+                    margin-bottom: 0;
+                    margin-right: 20px; /* Adjust right margin */
+               }
+               .hero, .portfolio {
+                    margin-left: 0; /* Remove left margin */
+               }
+          }
+
+          @media (max-width: 576px) {
+               .hero {
+                    padding: 20px;
+               }
+               .portfolio {
+                    flex-direction: column;
+               }
+               .project {
+                    margin: 10px 0;
+               }
+          }
+          
+          .spcl{
+               border: 1px solid rgb(255, 255, 255);
+               border-radius: 10px;
+               padding: 10px;
+               margin: 20px;
+          }
+     </style>
+</head>
+<body><div class="spcl">
+     <header>
+          <div class="logo">
+               <img src="logo.png" alt="logo">
+          </div>
+          <nav>
+               <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+               </ul>
+          </nav>
+     </header>
+     <main>
+          <section id="home" class="hero">
+               <h1>Welcome to my portfolio</h1>
+               <p>My name is John Doe and I am a web developer</p>
+          </section>
+          <section id="about" class="about">
+               <hr>
+               <h2>About Me</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod magna nec nisi placerat, id efficitur tellus tristique.</p>
+          </section><hr>
+          <section id="portfolio" class="portfolio"> 
+               <h2>Portfolio</h2><br>
+               <div class="project">
+                    <img src="project1.jpg" alt="project1">
+                    <h3>Project 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+               </div>
+               <div class="project">
+                    <img src="project2.jpg" alt="project2">
+                    <h3>Project 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+               </div>
+               <div class="project">
+                    <img src="project3.jpg" alt="project3">
+                    <h3>Project 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+               </div>
+          </section>
+          <section id="services" class="services"> <hr>
+               <h2>Services</h2>
+               <ul>
+                    <li>Web Development</li>
+                    <li>Graphic Design</li>
+                    <li>SEO Optimization</li>
+               </ul>
+          </section>
+          <section id="contact" class="contact">
+               <h2>Contact Me</h2>
+               <p>Email: john.doe@example.com</p>
+               <p>Phone: +1234567890</p>
+          </section>
+     </main>
+     <footer>
+          <ul>
+               <li><a href="#">Facebook</a></li>
+               <li><a href="#">Twitter</a></li>
+               <li><a href="#">Instagram</a></li>
+          </ul>
+     </footer>
+
+     <script>
+          // Smooth scrolling script
+          document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+               anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                         behavior: 'smooth'
+                    });
+               });
+          });
+     </script>
+     </div>
+</body>
+</html>
