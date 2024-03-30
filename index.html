@@ -4,31 +4,33 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>portfolio</title>
+     
      <style>
         
           header {
                position: fixed; /* Stick the header to the top */
                top: 0;
                left: 0;
-               width: 25%; /* Set a fixed width for the header */
+               width: 20%; /* Set a fixed width for the header */
                height: 100vh; /* Set height to viewport height */
                display: flex;
                flex-direction: column; /* Align items vertically */
                justify-content: space-between; /* Push items to top and bottom */
                /* padding: 20px; */
                background-color: rgba(207, 207, 207, 0); /* Transparent red background */
-               color: #ffffff;
+               color: #dddddd;
                z-index: 1000; /* Ensure the header appears above other content */
           }
           nav {
                position: absolute; /* Position the nav absolutely within the header */
-               top: 45%; /* Align nav to the middle */
+               top: 57%; /* Align nav to the middle */
                left: 50%;
                transform: translate(-50%, -50%); /* Center the nav */
-               color: #ffffff;
-               border: 2px solid #ffffff;
-               border-radius: 20px;
+               color: #dddddd;
+               border: 2px solid #ddddddc2;
+               border-radius: 30px;
                padding: 0;
+               
 
           }
           nav ul {
@@ -41,22 +43,20 @@
           }
           nav ul li a {
                text-decoration: none;
-               color: #ffffff;
+               color: #dddddd;
+               
           }
          
           .hero {
                text-align: center;
-               padding: 50px;
-               margin-top: 50px;
-               /* background-color: #f4f4f4; */
-               /* height: 100vh;  */
-               /* Set height to viewport height */
-              /* Adjust margin to account for fixed header */
+               padding: 20px;
+               height: 600px;
+
           }
           .portfolio {
                display: flex;
                justify-content: space-between;
-               margin-top: 20px;
+               margin-top: 220px;
                min-height: 200vh;
                 /* Set height to viewport height */
 
@@ -77,9 +77,9 @@
                flex-direction: column;
                scrollbar-width: thin;
                scroll-behavior: smooth;
-               scrollbar-color: #ffffff00 #f4f4f400;
+               scrollbar-color: #dddddd00 #f4f4f400;
                border: 2px solid #f7ffc7; /* Define a solid border first */
-               color: #ffffff;
+               color: #dddddd;
                font-size: 20px;
                text-align: justify; /* Set text alignment to justify */
                margin-bottom: 60px;
@@ -87,7 +87,7 @@
                }   
 
                .project img {
-                   height: 100px; /* Set height for the image */
+                   height:150px; /* Set height for the image */
                    width: auto; /* Let the width adjust automatically */
                    margin-right: 10px; /* Adjust as needed */
                    border-radius: 20px;
@@ -107,7 +107,11 @@
 
           section {
                padding: 50px;
-               height: 100vh;          }
+               height: 100vh;
+          border: 2px solid #dddddd;
+          border-radius: 20px;
+          margin-bottom: 200px;
+               }
           
   
 
@@ -121,17 +125,19 @@
                flex-direction: column;
                min-height: 100vh; /* Ensure the body takes up at least the viewport height */
                background-color: #171717;
-               color: #ffffff;
+               color: #dddddd;
                font-size: 25px;
                padding: 0px;
-               scrollbar-color: #ffffff00 #171717; /* Set scrollbar color */
+               scrollbar-color: #dddddd00 #171717; /* Set scrollbar color */
                scrollbar-width: thin; /* Set scrollbar width */
                font-weight: 400;
+               user-select: none;
 
           }
 
           main {
                flex: 1; /* Allow main content to grow */
+               margin: 2%;
                margin-left: 20%;
                
           }
@@ -140,7 +146,7 @@
                text-align: center;
                padding: 10px;
                background-color: #000000;
-               color: #ffffff;
+               color: #dddddd;
                width: 100-2%;
                /* position: absolute; */
           }
@@ -155,7 +161,7 @@
           }
           footer ul li a {
                text-decoration: none;
-               color: #ffffff;
+               color: #dddddd;
           }
 
           @media (max-width: 768px) {
@@ -211,10 +217,10 @@
 
 .button-48 {
   appearance: none;
-  background-color: #ffffff00;
+  background-color: #dddddd00;
   border-width: 0;
   box-sizing: border-box;
-  color: #ffffff;
+  color: #dddddd;
   cursor: pointer;
   display: inline-block;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -267,7 +273,7 @@
 }
 
 .button-48:after {
-  background-color: #ffffff;
+  background-color: #dddddd;
   /* border-radius: 10px; */
 
 }
@@ -275,13 +281,15 @@
 .button-48 span {
   z-index: 1;
   position: relative;
+  font-weight: 300;
+
 }
 
 hr {
      border: 0;
      height: 1px;
      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
-     margin: 20px 0;
+     margin: 0px 0;
 }
 
 /* Set scrollbar width */
@@ -296,7 +304,7 @@ hr {
 
 /* Set scrollbar thumb color */
 .portfolio .project::-webkit-scrollbar-thumb {
-    background: #ffffff; /* Adjust the color as needed */
+    background: #dddddd; /* Adjust the color as needed */
     border-radius: 5px; /* Optional: Add rounded corners to the scrollbar thumb */
 }
 
@@ -312,15 +320,15 @@ body::-webkit-scrollbar-track {
 
 /* Set scrollbar thumb color */
 body::-webkit-scrollbar-thumb {
-    background: #ffffff; /* Adjust the color as needed */
+    background: #dddddd; /* Adjust the color as needed */
     border-radius: 5px; /* Optional: Add rounded corners to the scrollbar thumb */
 }
 
 h1{
-     color: #ffffff;
+     color: #dddddd;
      font-weight: 300;
      font-size: 50px;
-     font-family: cascadia code, sans-serif;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
@@ -395,13 +403,108 @@ h1{
   transition: all 600ms cubic-bezier(0.48, 0, 0.12, 1);
 }
 
-h12{
-     color: #e5ff00;
-     font-weight: 200;
+h12{ 
+     color: #dddddd;
+     font-weight: 300;
      font-size: 60px;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 
 }
+
+h1, h2 {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight: 300;
+     font-size: 40px;
+            color: #dddddd;
+            text-align: center;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .key-features {
+            margin-bottom: 20px;
+        }
+        .key-features ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .key-contributions {
+            margin-bottom: 20px;
+        }
+        .key-contributions ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+       /* paragraph */
+       p{
+          font-size: 30px;
+          font-weight: 300;
+       }
+
+       li{
+         
+          line-height: 2;
+       }
+
+            /* Contact form styles */
+            .contact-form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            transition: border-color 0.3s ease;
+        }
+        .contact-form:hover {
+            border-color: #4CAF50;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form textarea {
+            height: 100px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        /* Contact information styles */
+        .contact-info {
+            border: 2px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            transition: border-color 0.3s ease;
+        }
+        .contact-info:hover {
+            border-color: #4CAF50;
+        }
+        .contact-info h3 {
+            color: #dddddd;
+            margin-bottom: 10px;
+            text-align: center;
+            font-weight: 300;
+        }
+        
+
+
 
      </style>
 </head>
@@ -428,106 +531,248 @@ h12{
      <main>
           <section id="home" class="hero" style="line-height: 2;">
                <!-- <h1>Welcome to my Portfolio!</h1> -->
-               <p style="font-size: 30px;">Hey there! My name is <br> <h12>Shreyas Joshi</h12><br>and I'm a Software developer with a passion for crafting awesome projects.</p>
-               <p style="font-size: 30px;">Take a sneak peek at some of the cool stuff I've built using Java – from sleek web apps to powerful desktop tools. Let's dive in together and explore the exciting world of coding!</p>
+               <p style="font-size: 25px; margin: 100px; margin-bottom: 50px;">Hey there! My name is <br>  <h12>Shreyas Joshi</h12><br>and I'm a Software developer with a passion for crafting awesome projects. Take a sneak peek at some of the cool stuff I've built using Java – from sleek web apps to powerful desktop tools. Let's dive in together and explore the exciting world of coding!</p>
                
-               <button class="button-48" onclick="scrollToSection('#about')" style="color: #ffffff; border: 2px solid white; border-radius: 10px;"><span class="text">About Me</span></button>
+               <button class="button-57" onclick="scrollToSection('#about')" style="color: #dddddd; border: 2px solid white; border-radius: 10px; margin: 0px;"><span class="text">About Me</span></button>
 
           </section>
-          <section id="about" class="about" style="padding:100px; text-align: center; ">
-               <hr>
-               <h2>About Me</h2>
-               <p>As a software developer, my role revolves around designing and building digital solutions. I specialize in writing code to create software applications that serve various purposes, from managing data to enhancing user experiences. My goal is to develop robust and user-friendly software that meets the needs of clients and end-users effectively.</p>
-          </section><hr>
-          <section id="Skills" class="Skills"  style="line-height: 2.5;">
-               <h1>Skills</h1>
-               <ul>
+          <section id="about" class="about" style="padding:100px; text-align: center;line-height: 2; ">
+              
+               <h2>About Me</h2> <hr>
+               <p style="font-size: 30px; margin-top: 100px;">As a software developer, my role revolves around designing and building digital solutions. I specialize in writing code to create software applications that serve various purposes, from managing data to enhancing user experiences. My goal is to develop robust and user-friendly software that meets the needs of clients and end-users effectively.</p>
+               <ul style="zoom: 70%; margin-top: 100px;">
                     
-                    
-                    <button class="button-57" role="button"><span class="text" style="cursor:default;">  Core Java</span><span>Core Java</span></button>
-                    <button class="button-57" role="button"><span class="text" style="cursor:default;">Spring Boot</span><span>Spring Boot</span></button>
-                    <button class="button-57" role="button"><span class="text" style="cursor:default;">Rest API</span><span>Rest API</span></button>
-                    <button class="button-57" role="button"><span class="text" style="cursor:default;">HTML CSS</span><span>HTML CSS</span></button>
-                    <button class="button-57" role="button"><span class="text" style="cursor:default;">JavaScript</span><span>JavaScript</span></button>
-                    <button class="button-57" role="button"><span class="text" style="cursor:default;">Git / GitHub</span><span>Git / GitHub</span></button>
-                    <button class="button-57" role="button"><span class="text" style="cursor:default;">MySQL</span><span>MySQL</span></button>
-                    
-     
+                    <!-- github website button that redirects to the github website -->
+                    <button class="button-57" onclick="redirectToGitHub()">GitHub</button>
+                    <button class="button-57" onclick="redirectToLinkedIn()">LinkedIn</button>
+                    <button class="button-57" onclick="redirectToTwitter()">Twitter </button>
+                    <button class="button-57" onclick="redirectTodev()">Dev</button>
+                    <button class="button-57" onclick="redirectToMedium()">Medium</button>
+                    <button class="button-57" onclick="redirectToStackOverflow()">Stack Overflow</button>
+
+
                </ul>
-          </section>
+               
+          </section><hr>
+          <section id="Skills" class="Skills" style="line-height: 2.5;zoom: 80%;">
+    <h1 style="font-size: 60px;">SKILLS<hr></h1>
+    <ul>
+        
+     <button class="button-57" role="button">
+         <span class="emoji">☕️</span>
+         <span class="text" style="cursor:default;">Core Java</span>
+         <span>Core Java</span>
+     </button>
+
+     
+ 
+ 
+     <button class="button-57" role="button">
+         <span class="emoji">🚀</span>
+         <span class="text" style="cursor:default;">Spring Boot</span>
+         <span>Spring Boot</span>
+     </button>
+     <br><br>
+ 
+     <button class="button-57" role="button">
+         <span class="emoji">🔗</span>
+         <span class="text" style="cursor:default;">Rest API</span>
+         <span>Rest API</span>
+     </button>
+     
+ 
+     <button class="button-57" role="button">
+         <span class="emoji">🌐</span>
+         <span class="text" style="cursor:default;">HTML CSS</span>
+         <span>HTML CSS</span>
+     </button>
+     <br><br>
+ 
+     <button class="button-57" role="button">
+         <span class="emoji">📜</span>
+         <span class="text" style="cursor:default;">JavaScript</span>
+         <span>JavaScript</span>
+     </button>
+     
+ 
+     <button class="button-57" role="button">
+         <span class="emoji">🔱</span>
+         <span class="text" style="cursor:default;">Git / GitHub</span>
+         <span>Git / GitHub</span>
+     </button>
+     <br><br>
+ 
+     <button class="button-57" role="button">
+         <span class="emoji">🗄️</span>
+         <span class="text" style="cursor:default;">MySQL</span>
+         <span>MySQL</span>
+     </button>
+ 
+</ul>
+</section>
+
           <section id="portfolio" class="portfolio"> 
-               <h1>Projects</h1><br>
+               <h1>Projects  </h1><hr><br>
                <div class="project">
                    
                     <div class="flex-container">
-                        <img src="a.png" alt="project1"> 
-                        <p><h1>Project 1</h1>  </div><br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                         Accusantium quos libero porro soluta, non beatae aperiam vel eaque dicta nesciunt eveniet molestias 
-                         provident sint voluptas qui voluptate reprehenderit. Placeat nihil voluptatum fugit earum sequi doloremque,
-                          sapiente velit cupiditate. Assumenda doloremque delectus quibusdam, exercitationem provident unde consequuntur 
-                          architecto sapiente, corporis neque, numquam reiciendis expedita quo? Accusamus mollitia impedit aliquid adipisci
-                           explicabo iure, vel ipsam veniam magnam cumque quia odio quos quaerat repellat eos, veritatis amet delectus sapiente.
-                            Amet aliquam perspiciatis est culpa a distinctio beatae voluptatum officiis qui nemo nesciunt laboriosam, omnis asperiores 
-                            aspernatur voluptates consectetur veniam quas illum! Totam eligendi consequatur exercitationem amet quo modi, corrupti perferendis? 
-                              ullam temporibus! Qui autem, rem culpa commodi facere, laudantium inventore suscipit atque impedit ab eveniet odit nulla! Iste</p>     
+                        <img src="prj1.jpg" alt="project1"> 
+                        <p><h1>Automatic Money Dispenser 1</h1>  </div><br><br>
+                         <hr>
+                         <!-- <h1>Project: Automatic Money Dispenser</h1> -->
+                         <p>As the sole developer, I conceptualized, designed, and implemented an innovative Automatic Money Dispenser system using Spring, Java technologies, and integrated hardware components.</p>
+                         
+                         <h2>Description:</h2>
+                         <p>The Automatic Money Dispenser project was a solo endeavor aimed at creating a user-friendly and efficient solution for dispensing cash securely and conveniently, along with comprehensive financial services. Leveraging Spring framework for its robustness, Java for its versatility, and integrated hardware components for physical interaction, I embarked on this ambitious project to address the growing demand for automated financial services.</p>
+                         
+                         <h2>Key Features:</h2>
+                         <div class="key-features">
+                             <ul>
+                                 <li>Statement Billing: Implemented a feature allowing users to generate detailed statements of their transactions, providing transparency and accountability.</li>
+                                 <li>Cash Dispensing: Developed the core functionality for securely dispensing cash to users upon request, ensuring accuracy and reliability in monetary transactions.</li>
+                                 <li>Money Transfer: Enabled seamless transfer of funds between accounts, facilitating convenient financial transactions for users.</li>
+                                 <li>Account Management: Introduced a robust account management system, empowering users to view balances, manage transactions, and perform account-related tasks with ease.</li>
+                             </ul>
+                         </div>
+                 
+                         <h2>Key Contributions:</h2>
+                         <div class="key-contributions">
+                             <ul>
+                                 <li>Conceptualized and designed the project, defining requirements and scope to align with objectives.</li>
+                                 <li>Utilized Spring framework to develop a scalable and modular architecture, allowing for easy integration of new features and enhancements.</li>
+                                 <li>Implemented core functionalities such as user authentication, transaction processing, and interfacing with integrated hardware components to enable seamless operation of the dispenser.</li>
+                                 <li>Focused on optimizing user experience through intuitive interface design and usability testing, resulting in a streamlined and user-friendly interaction.</li>
+                                 <li>Proactively addressed technical challenges and bugs, conducting thorough debugging and performance optimization to maintain system reliability and efficiency.</li>
+                             </ul>
+                         </div>
+
+                         <h1>Project Achievements</h1>
+        <div class="achievements">
+            <ul>
+                <li>Developed and deployed a fully functional prototype of the Automatic Money Dispenser system, exceeding initial expectations for project completion and functionality.</li>
+                <li>Demonstrated exceptional problem-solving skills and technical expertise throughout the development lifecycle, resolving challenges promptly and effectively.</li>
+                <li>Received accolades from stakeholders for the system's robust performance, reliability, and user-friendly interface, surpassing anticipated project outcomes.</li>
+                <li>Successfully implemented innovative features such as statement billing, cash dispensing, money transfer, and account management, showcasing adaptability and creativity in project execution.</li>
+                <li>Established a strong foundation for future development and scalability of the Automatic Money Dispenser system, laying the groundwork for continued success and expansion.</li>
+            </ul>
+        </div>
+                    
+                    </p>     
                 </div>
                 
                <div class="project">
                     <div class="flex-container">
-                         <img src="a.png" alt="project1"> 
-                         <p><h1>Project 1</h1>  </div><br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                          Accusantium quos libero porro soluta, non beatae aperiam vel eaque dicta nesciunt eveniet molestias 
-                          provident sint voluptas qui voluptate reprehenderit. Placeat nihil voluptatum fugit earum sequi doloremque,
-                           sapiente velit cupiditate. Assumenda doloremque delectus quibusdam, exercitationem provident unde consequuntur 
-                           architecto sapiente, corporis neque, numquam reiciendis expedita quo? Accusamus mollitia impedit aliquid adipisci
-                            explicabo iure, vel ipsam veniam magnam cumque quia odio quos quaerat repellat eos, veritatis amet delectus sapiente.
-                             Amet aliquam perspiciatis est culpa a distinctio beatae voluptatum officiis qui nemo nesciunt laboriosam, omnis asperiores 
-                             aspernatur voluptates consectetur veniam quas illum! Totam eligendi consequatur exercitationem amet quo modi, corrupti perferendis? 
-                               ullam temporibus! Qui autem, rem culpa commodi facere, laudantium inventore suscipit atque impedit ab eveniet odit nulla! Iste</p> 
+                         <img src="prj2.jpg" alt="project1"> 
+                         <p><h1>Governance Interaction Management System</h1>  </div><br><br>
+                          <hr>
+    
+                              <h2>Project Overview:</h2>
+                              The Interaction Management System was a significant project developed using the MERN (MongoDB, Express.js, React.js, Node.js) stack. Its primary objective was to facilitate the recording and tracking of interactions between leads and employees on a monthly basis. This system served as a comprehensive platform for managing and monitoring communication channels within the organization.
+                              <h2>Key Features:</h2>
+                              <ul>
+                                  <li><strong>Recording Interactions:</strong> The system allowed leads to record interactions with employees, including meetings, calls, emails, and other forms of communication. Each interaction was logged with relevant details such as date, time, duration, and purpose.</li>
+                                  <li><strong>Monthly Tracking:</strong> Interactions were organized and categorized based on monthly data. This feature enabled easy tracking of communication trends over time, providing valuable insights into lead-employee engagement dynamics.</li>
+                                  <li><strong>Dashboard for Lead Managers:</strong> Lead managers had access to a dashboard that provided an overview of interaction statistics, including the number of interactions, average duration, top-performing employees, and other key metrics. This dashboard served as a centralized tool for monitoring team performance and identifying areas for improvement.</li>
+                                  <li><strong>Employee Dashboard:</strong> Employees also had their own dashboard where they could view their interaction history, track their performance metrics, and receive feedback from lead managers. This feature fostered transparency and accountability, empowering employees to actively engage in communication initiatives.</li>
+                                  <li><strong>Reporting and Analytics:</strong> The system offered robust reporting and analytics capabilities, allowing users to generate customized reports and analyze interaction data from various perspectives. This functionality facilitated data-driven decision-making and strategic planning.</li>
+                              </ul>
+                              
+                              <h2>Achievements:</h2>
+                              <ul>
+                                  <li><strong>Major Project Completion:</strong> The successful development and deployment of the Interaction Management System marked a significant milestone for the organization. Its implementation streamlined communication processes and enhanced collaboration between leads and employees.</li>
+                                  <li><strong>Appreciation and Recognition:</strong> The project received widespread appreciation from stakeholders, including lead managers, employees, and higher management. The system's user-friendly interface, advanced features, and tangible benefits contributed to its positive reception within the organization.</li>
+                                  <li><strong>Improved Efficiency and Productivity:</strong> By centralizing interaction management and providing actionable insights, the system contributed to improved efficiency and productivity across teams. Lead managers were able to make informed decisions, allocate resources effectively, and optimize communication strategies.</li>
+                              </ul>
+                         
+                         </p> 
                                </div>
                                <div class="project">
-                                   <div class="flex-container">
-                                        <img src="a.png" alt="project1"> 
-                                        <p><h1>Project 1</h1>  </div><br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                         Accusantium quos libero porro soluta, non beatae aperiam vel eaque dicta nesciunt eveniet molestias 
-                                         provident sint voluptas qui voluptate reprehenderit. Placeat nihil voluptatum fugit earum sequi doloremque,
-                                          sapiente velit cupiditate. Assumenda doloremque delectus quibusdam, exercitationem provident unde consequuntur 
-                                          architecto sapiente, corporis neque, numquam reiciendis expedita quo? Accusamus mollitia impedit aliquid adipisci
-                                           explicabo iure, vel ipsam veniam magnam cumque quia odio quos quaerat repellat eos, veritatis amet delectus sapiente.
-                                            Amet aliquam perspiciatis est culpa a distinctio beatae voluptatum officiis qui nemo nesciunt laboriosam, omnis asperiores 
-                                            aspernatur voluptates consectetur veniam quas illum! Totam eligendi consequatur exercitationem amet quo modi, corrupti perferendis? 
-                                              ullam temporibus! Qui autem, rem culpa commodi facere, laudantium inventore suscipit atque impedit ab eveniet odit nulla! Iste</p> 
+                                             <h1>Database Management System Project</h1>
+    <hr>
+                                             <h2>Project Overview:</h2>
+                                             The Database Management System (DBMS) project aimed to develop a robust and efficient database solution for managing organizational data. Utilizing modern database technologies and best practices, the project addressed the need for centralized data storage, retrieval, and management.
+                                             <h2>Key Features:</h2>
+                                             <ul>
+                                                 <li><strong>Data Modeling:</strong> The DBMS project involved the creation of a comprehensive data model that accurately represented the organization's data structure and relationships. This step laid the foundation for designing an effective database schema.</li>
+                                                 <li><strong>Database Design:</strong> The project focused on designing an optimized database schema, taking into account factors such as data integrity, normalization, and performance. Careful consideration was given to table structures, indexes, and constraints to ensure efficient data storage and retrieval.</li>
+                                                 <li><strong>Data Manipulation:</strong> The DBMS provided functionality for inserting, updating, and deleting data records within the database. It also supported complex query operations for retrieving specific information and generating custom reports as per user requirements.</li>
+                                                 <li><strong>Security and Access Control:</strong> The project implemented robust security measures to protect sensitive data and ensure compliance with privacy regulations. Role-based access control mechanisms were employed to restrict unauthorized access to the database and enforce data confidentiality.</li>
+                                                 <li><strong>Backup and Recovery:</strong> The DBMS included features for performing regular backups of the database to prevent data loss in case of system failures or disasters. Additionally, it offered mechanisms for data recovery and restoration to minimize downtime and maintain data integrity.</li>
+                                             </ul>
+                                             
+                                             <h2>Achievements:</h2>
+                                             <ul>
+                                                 <li><strong>Efficient Data Management:</strong> The successful implementation of the DBMS project resulted in efficient data management practices within the organization. The centralized database solution facilitated seamless data storage, retrieval, and manipulation, leading to improved productivity and decision-making.</li>
+                                                 <li><strong>Enhanced Data Security:</strong> By implementing robust security measures and access controls, the project bolstered data security and minimized the risk of unauthorized access or data breaches. This ensured the integrity and confidentiality of organizational data, enhancing trust and compliance with regulatory requirements.</li>
+                                                 <li><strong>Scalability and Performance:</strong> The DBMS project was designed with scalability and performance in mind, allowing the database system to accommodate growing data volumes and user loads. Performance optimization techniques were employed to ensure optimal query execution and responsiveness.</li>
+                                             </ul>
+                                        </p> 
                                               </div>
           </section>
-          <section id="services" class="services"> <hr><hr>
-               <h1>Services</h1>
-               <ul>
-                    <!-- skills of java spring fullstack developer -->
-                    <li>Core Java</li>
-                    <li>Spring Boot</li>
-                    <li>Rest API</li>
-                    <li>HTML CSS</li>
-                    <li>JavaScript</li>
-                    <li>Git / GitHub</li>
-                    <li>MySQL</li>
-                    <li>React JS</li>
-                    <li>Node JS</li>
-
-               </ul>
+          <section id="services" class="services" style="height: 1200px; zoom: 90%;"> 
+               <h1>Services</h1><hr>
+   
+               <h3>Custom Software Development</h3>
+               We specialize in building tailored software solutions to meet your unique business needs. From initial concept to final deployment, we work closely with you to develop intuitive, efficient, and scalable software applications.
+               
+               <h3>Web Development</h3>
+               We create dynamic and responsive websites using the latest technologies and best practices. Whether you need a simple landing page or a complex web application, we have the expertise to bring your vision to life.
+               
+               <h3>Mobile App Development</h3>
+               Reach your audience on the go with our mobile app development services. We design and develop native and cross-platform mobile applications for iOS and Android devices, ensuring a seamless user experience across all platforms.
+               
+               <h3>Software Consulting</h3>
+               Get expert guidance and advice on all aspects of software development. From architecture and design to implementation and deployment, our experienced team provides strategic consulting services to help you make informed decisions and achieve your goals.
+               
+               <h3>Code Review and Optimization</h3>
+               Improve the performance and maintainability of your existing software codebase with our code review and optimization services. We analyze your code, identify areas for improvement, and implement solutions to enhance efficiency and reliability.
+               
+               <h3>API Integration</h3>
+               Streamline your workflows and improve data exchange between systems with our API integration services. We integrate third-party APIs and develop custom APIs to enable seamless communication between different software applications.
+               
           </section>
-          <section id="contact" class="contact">
-               <h1>Contact Me</h1>
-               <p>Email: john.doe@example.com</p>
-               <p>Phone: +1234567890</p>
+          <section id="contact" class="contact" style="height: 1000px;">
+               <div class="container">
+                    <h2>Contact Us</h2>
+                    
+                    <!-- Contact form -->
+                    <div class="contact-form">
+                        <form action="#" method="post">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject">
+                            
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                            
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                    
+                    <!-- Contact information -->
+                    <div class="contact-info">
+                        <h3>Our Contact Information</h3>
+                        <p>123 Main Street, Cityville, ABC123</p>
+                        <p>Email: info@example.com</p>
+                        <p>Phone: +123 456 7890</p>
+                    </div>
+                    
+     
+                </div>
           </section>
      </main></div>
-     <footer>
+     <!-- <footer>
           <ul>
                <li><a href="#">Facebook</a></li>
                <li><a href="#">Twitter</a></li>
                <li><a href="#">Instagram</a></li>
           </ul>
-     </footer>
+     </footer> -->
 
 
 
@@ -552,6 +797,33 @@ h12{
         });
     }
 }
+
+function redirectToGitHub() {
+            window.location.href = "https://github.com/okshreyas";
+        }
+
+            function redirectToLinkedIn() {
+               window.location.href = "https://www.linkedin.com/in/okshreyas/";
+            }
+
+               function redirectToTwitter() {
+                window.location.href = "https://twitter.com/okswu";
+               }
+
+               function redirectTodev() {
+                window.location.href = "https://dev.to/okshreyas";
+               }
+
+               function redirectToMedium() {
+                window.location.href = "https://medium.com/@unixx";
+               }
+
+               function redirectToStackOverflow() {
+                window.location.href = "https://stackoverflow.com/users/14430831/shreyas";
+               }
+
+               
+
 
 
 
